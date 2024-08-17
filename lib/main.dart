@@ -1,25 +1,30 @@
 import 'dart:developer';
 
+
 void main() {
 
-  //Conditional Expression
+  //Switch catch statements: Applicable only 'int' or 'String'
+  String grade = "A";
 
-  //1. condition ? exp1 : exp2
-  int a=2;
-  int b =3;
-  int smaller = a<b ? a :b;
-  // if(a<b){
-  //  log("$a is smaller");
-  // }else{
-  //   log("$b is smaller");
-  // }
-  // a<b ? log("$a is smaller") : log("$b is smaller");
-  log("$smaller is smaller");
+  switch (grade) {
+    case "A":
+     log("Excellent grade of A");
+     break;
 
-  //2. exp1 ?? exp2
-  var name = null;
+    case "B":
+      log("Very Good");
+      break;
 
-  var nameToPrint = name?? "Guest User";
-  log(nameToPrint);
+    case "C":
+      log("Good enough. But work hard");
+      break;
+
+    case "F":
+      log("You have failed");
+      break;
+
+    default:
+      log("Invalid Grade");
+  }
 
 }

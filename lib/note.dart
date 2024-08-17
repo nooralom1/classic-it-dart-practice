@@ -10,7 +10,7 @@ void main() {
     "semester": "8th"
   };
 
-  print(map.keys.toList());
+  log("${map.keys.toList()}");
 
   //prime or not prime
   var number =9;
@@ -22,10 +22,10 @@ void main() {
     }
   }
   if(count==0){
-    print("prime");
+    log("prime");
   }
   else{
-    print("not prrime");
+    log("not prime");
   }
 
   //prime or not prime in a range
@@ -38,7 +38,7 @@ void main() {
       }
     }
     if(count==0){
-      print(i);
+      log("$i");
     }
   }
 
@@ -46,33 +46,36 @@ void main() {
   var birthyear = 2000;
   var presentyear = DateTime.now().year-birthyear;
 
-  print ("Your age is = $presentyear");
+  log ("Your age is = $presentyear");
 
 
 //marks calculate
   int marks = 60;
 
   if(marks>=80&&marks<=100){
-    print("result is A+");
+    log("result is A+");
   }
   else  if(marks>=70&&marks<=79){
-    print("result is A");
+    log("result is A");
   }
   else  if(marks>=60&&marks<=69){
-    print("result is A-");
+    log("result is A-");
   }
   else  if(marks>=50&&marks<=59){
-    print("result is B+");
+    log("result is B+");
   }
   else  if(marks>=40&&marks<=49){
-    print("result is B");
+    log("result is B");
   }
   else  if(marks>=33&&marks<=39){
-    print("result is C");
+    log("result is C");
   }
   else{
-    print("F");
+    log("F");
   }
+
+
+
 
   //Conditional Expression
 
@@ -93,5 +96,32 @@ void main() {
 
   var nameToPrint = name?? "Guest User";
   log(nameToPrint);
+
+
+
+
+  //Switch catch statements: Applicable only 'int' or 'String'
+  String grade = "A";
+
+  switch (grade) {
+    case "A":
+      log("Excellent grade of A");
+      break;
+
+    case "B":
+      log("Very Good");
+      break;
+
+    case "C":
+      log("Good enough. But work hard");
+      break;
+
+    case "F":
+      log("You have failed");
+      break;
+
+    default:
+      log("Invalid Grade");
+  }
 
 }
