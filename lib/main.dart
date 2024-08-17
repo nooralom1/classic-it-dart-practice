@@ -3,28 +3,18 @@ import 'dart:developer';
 
 void main() {
 
-  //Switch catch statements: Applicable only 'int' or 'String'
-  String grade = "A";
+  //For Loop
 
-  switch (grade) {
-    case "A":
-     log("Excellent grade of A");
-     break;
-
-    case "B":
-      log("Very Good");
-      break;
-
-    case "C":
-      log("Good enough. But work hard");
-      break;
-
-    case "F":
-      log("You have failed");
-      break;
-
-    default:
-      log("Invalid Grade");
+  for(int i= 1; i<=10; i++){
+    if(i%2==0){
+      log("$i");
+    }
   }
 
+  //For in Loop
+  List planetList = ["Mercury", "Venus", "Earth", "Mars",];
+
+  for(String planet in planetList){
+    log(planet);
+  }
 }
