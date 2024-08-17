@@ -1,22 +1,28 @@
-import 'dart:developer';
 
+//OBJECTIVES
+//1. Define a function
+//2. Pass parameters to a function
+//3. Return value from a function
+//4. Test that by default a function returns null
+
+import 'dart:math';
 
 void main() {
 
-  //Continue Keyword
-  for(int i=1; i<=10; i++){
-  if( i%2==0){
-  continue;
-  }
-  log("$i ");
-  }
-  //Using labels
- for(int i= 1; i<=3; i++ ){
-    inner: for(int j=1; j<=3; j++){
-      if( i==2 && j==2 ){
-        continue inner;
-      }
-      log("$i  $j");
-    }
-  }
+  findPerimeter(4,2);
+  
+  int rectArea = getArea(10, 5);
+  print("The area is $rectArea");
+
+}
+
+void findPerimeter(int length, int breadth){
+
+  int perimeter = 2*(length+breadth);
+  print("The perimeter is $perimeter");
+}
+
+int getArea(int length, int breadth){
+  int area = length*breadth;
+  return area;
 }
