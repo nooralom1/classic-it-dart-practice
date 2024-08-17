@@ -3,26 +3,20 @@ import 'dart:developer';
 
 void main() {
 
-  //Break Keyword
+  //Continue Keyword
   for(int i=1; i<=10; i++){
-  log("$i ");
-  if( i==6){
-  break ;
+  if( i%2==0){
+  continue;
   }
+  log("$i ");
   }
   //Using labels
-  myOuterLoop: for(int i= 1; i<=3; i++ ){
-    for(int j=1; j<=3; j++){
-      log("$i  $j");
+ for(int i= 1; i<=3; i++ ){
+    inner: for(int j=1; j<=3; j++){
       if( i==2 && j==2 ){
-        break myOuterLoop;
+        continue inner;
       }
-    }
-  }
-  //Nested For Loop
-  for(int i= 1; i<=10; i++ ){
-    for(int j=1; j<=i; j++){
-      log("$i");
+      log("$i  $j");
     }
   }
 }
