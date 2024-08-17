@@ -1,14 +1,15 @@
 import 'dart:developer';
+import 'dart:nativewrappers/_internal/vm/lib/core_patch.dart';
 
 
 void main() {
 
-  //While Loop
-  var i = 1;
-  while(i<=10){
-    if(i%2 != 0){
-      log("$i");
+  //Do While Loop
+  int n = 1;
+  do{
+    if(n%2==0){
+      log("$n");
     }
-    i++;
-  }
+    n++;
+  }while(n<=10);
 }
