@@ -1,12 +1,18 @@
 
+import 'dart:developer';
 
 void main() {
 
-  int year =12;
+  int num1 = 10;
+  int num2 = 50;
+  int num3 = 30;
 
-  if((year%4==0 && year%100!=0) || year%400==0){
-    print("$year is a leap year");
-  }else{
-    print("$year is not a leap year");
+  if(num1>num2 && num1>num3){
+    log("max number is num1= $num1");
   }
-}
+  else if(num2>num1 && num2>num3){
+    log("max number is num2= $num2");
+  }else{
+    log("max number is num3= $num3");
+  }
+  }
