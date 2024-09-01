@@ -1,18 +1,8 @@
-
 import 'dart:developer';
+import 'dart:math';
 
 void main() {
-
-  int num1 = 10;
-  int num2 = 50;
-  int num3 = 30;
-
-  if(num1>num2 && num1>num3){
-    log("max number is num1= $num1");
-  }
-  else if(num2>num1 && num2>num3){
-    log("max number is num2= $num2");
-  }else{
-    log("max number is num3= $num3");
-  }
-  }
+   var myList = [15,2,10,4,20,6];
+   var result = myList.reduce((a,b) => a>b ? a:b);
+   print(result);
+}
