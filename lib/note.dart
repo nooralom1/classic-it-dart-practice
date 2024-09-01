@@ -74,7 +74,14 @@ void main() {
     log("F");
   }
 
+  //Leap in Year
+  int year =12;
 
+  if((year%4==0 && year%100!=0) || year%400==0){
+    log("$year is a leap year");
+  }else{
+    log("$year is not a leap year");
+  }
 
 
   //Conditional Expression
